@@ -1,0 +1,23 @@
+DOS > mysql -uroot -p1234
+
+show databases;
+
+create database mybatisdb;
+
+use mybatisdb;
+
+show tables;
+
+create table saram(
+no int not null auto_increment primary key,
+id varchar(20)  not null,
+name varchar(20),
+age int
+);
+
+insert into saram(id, name, age)
+values('KIM', '김길동', 25);
+
+insert into saram(id, name, age)
+values('LEE', '이길동', 35);
+select * from saram;
